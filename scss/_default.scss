@@ -3,8 +3,7 @@ body {
     font-size: 18px;
     line-height: 29px;
     padding: 0;
-    margin: 0;
-    background: hsl(0, 0%, 98%);
+    margin: 0; 
 }
 
 ul {
@@ -12,6 +11,7 @@ ul {
     margin: 0;
     list-style: none;
 }
+
 
 li,
 a {
@@ -32,4 +32,27 @@ button, a {
 .page_section {
     padding-left: 16px;
     padding-right: 16px;
+}
+
+.page_container.section_container{
+    text-align: center;
+}
+
+img, svg {
+    max-width: 100%;
+}
+
+@media(min-width: 1114px) {
+
+    body {
+        padding: 0;
+    }
+    
+    .header_container,
+    .section_container,
+    .footer_container {
+        max-width: 1114px;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }

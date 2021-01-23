@@ -1,0 +1,42 @@
+.pricing_section {
+    padding-top: 250px; 
+}
+
+.section_heading {
+    font-size: 38px; 
+    line-height: 42px;
+    font-weight: 600;
+}
+
+.section_button.start_button {
+    margin-top: 32px; 
+}
+
+@media(min-width: 1114px) {
+
+    .section_heading {
+        max-width: 400px;
+        font-size: 48px;
+        line-height: 59px;
+    }
+
+    .pricing_section {
+        padding-top: 0;
+
+        .section_container { 
+            text-align: initial; 
+            padding-top: 200px;
+            padding-bottom: 50px;
+        }
+
+        .section_paragraph {
+            max-width: 400px;
+            line-height: 29px;
+            font-size: 18px;
+        }
+
+        .page_link--start { 
+            justify-content: initial;
+        }
+    }
+}

@@ -1,0 +1,106 @@
+.about_section {
+    padding-top: 75px;
+
+    .section_heading {
+        font-size: 32px;
+        line-height: 33px;
+        font-weight: 600;
+    }
+
+    .article_container {
+        padding-top: 60px;
+        display: flex;
+        flex-direction: column;
+        text-align: initial;
+    }
+
+    .article_header {
+        display: flex;
+
+        span {
+            font-size: 24px;
+            line-height: 25px;
+            display: block;
+            padding: 12px;
+            padding-left: 32px;
+            padding-right: 32px;
+            color: #ffffff;
+            background: hsl(12, 88%, 59%);
+            border-radius: 50px;
+            -webkit-border-radius: 50px;
+            -moz-border-radius: 50px;
+            -ms-border-radius: 50px;
+            -o-border-radius: 50px;
+        }
+    }
+    .article_heading {
+        font-size: 24px;
+        line-height: 25px;
+        font-weight: 500;
+        margin: 0;
+        padding: 12px;
+        padding-left: 48px;
+        background-color: hsl(13, 100%, 96%);
+        position: absolute;
+        right: 0;
+        left: 80px;
+        z-index: -1;
+    }
+}
+
+.page_section:nth-of-type(2) {
+    padding-bottom: 75px;
+}
+
+@media (min-width: 1114px) {
+    .page_container.section_container {
+        text-align: unset;
+    }
+
+    .about_section {
+        padding-top: 0;
+
+        .about_section__container {
+            display: grid;
+            grid-template-columns: auto auto;
+            column-gap: 75px;
+        }
+
+        .section_heading {
+            max-width: unset;
+            font-size: 32px;
+            font-weight: 600;
+            line-height: 36px;
+        }
+
+        .about_section__paragraph {
+            max-width: 375px;
+            line-height: 29px;
+        }
+
+        .article_container {
+            padding-top: 0;
+        }
+
+        .article_heading {
+            font-size: 24px;
+            line-height: 25px;
+            font-weight: 600;
+            margin: 0;
+            padding: 12px;
+            background-color: unset;
+            position: unset;
+            padding-left: 22.6px;
+        }
+
+        .article_paragraph {
+            margin-left: 118px;
+        }
+        // .article_heading {
+        //     font-size: 26px;
+        //     line-height: 27px;
+        //     margin-top: 32px;
+        //     margin-bottom: 32px;
+        // }
+    }
+}
