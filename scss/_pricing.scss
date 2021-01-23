@@ -1,30 +1,29 @@
 .pricing_section {
-    padding-top: 250px; 
-}
-
-.section_heading {
-    font-size: 38px; 
-    line-height: 42px;
-    font-weight: 600;
-}
-
-.section_button.start_button {
-    margin-top: 32px; 
-}
-
-@media(min-width: 1114px) {
+    padding-top: 250px;
 
     .section_heading {
-        max-width: 400px;
-        font-size: 48px;
-        line-height: 59px;
+        font-size: 38px;
+        line-height: 42px;
+        font-weight: 600;
     }
+}
+.pricing_section .start_button {
+    margin-top: 32px;
+}
 
+@media (min-width: 1114px) {
+    .pricing_section {
+        .section_heading {
+            max-width: 400px;
+            font-size: 48px;
+            line-height: 59px;
+        }
+    }
     .pricing_section {
         padding-top: 0;
 
-        .section_container { 
-            text-align: initial; 
+        .section_container {
+            text-align: initial;
             padding-top: 200px;
             padding-bottom: 50px;
         }
@@ -35,7 +34,7 @@
             font-size: 18px;
         }
 
-        .page_link--start { 
+        .page_link--start {
             justify-content: initial;
         }
     }
