@@ -1,5 +1,6 @@
 .about_section {
     padding-top: 75px;
+    padding-right: 0;
 
     .section_heading {
         font-size: 32px;
@@ -38,12 +39,11 @@
         line-height: 25px;
         font-weight: 500;
         margin: 0;
+        margin-left: -32px;
         padding: 12px;
         padding-left: 48px;
         background-color: hsl(13, 100%, 96%);
-        position: absolute;
-        right: 0;
-        left: 80px;
+        width: 100%; 
         z-index: -1;
     }
 }

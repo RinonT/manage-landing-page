@@ -209,28 +209,32 @@ img, svg {
 @media (min-width: 1114px) {
   .page_container.section_container.testimonials_section__container {
     max-width: unset; }
-  .testimonials_section .testimonials_section__header {
-    display: flex;
-    flex-direction: column;
-    align-items: center; }
-  .testimonials_section .section_heading {
-    font-size: 32px; }
-  .testimonials_section img {
-    width: 100px; }
-  .testimonials_section .testimonials_section__article__container {
-    display: flex;
-    flex-direction: column;
-    text-align: center; }
-  .testimonials_section .testimonials_section__article {
-    display: flex;
-    column-gap: 32px; }
-  .testimonials_section .testimonials_section__article__container:last-of-type {
-    display: none; }
-  .testimonials_section .page_link--start {
-    justify-content: center; } }
+  .testimonials_section {
+    padding-left: 0;
+    padding-right: 0; }
+    .testimonials_section .testimonials_section__header {
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+    .testimonials_section .section_heading {
+      font-size: 32px; }
+    .testimonials_section img {
+      width: 100px; }
+    .testimonials_section .testimonials_section__article__container {
+      display: flex;
+      flex-direction: column;
+      text-align: center; }
+    .testimonials_section .testimonials_section__article {
+      display: flex;
+      column-gap: 32px; }
+    .testimonials_section .testimonials_section__article__container:last-of-type {
+      display: none; }
+    .testimonials_section .page_link--start {
+      justify-content: center; } }
 
 .about_section {
-  padding-top: 75px; }
+  padding-top: 75px;
+  padding-right: 0; }
   .about_section .section_heading {
     font-size: 32px;
     line-height: 33px;
@@ -261,12 +265,11 @@ img, svg {
     line-height: 25px;
     font-weight: 500;
     margin: 0;
+    margin-left: -32px;
     padding: 12px;
     padding-left: 48px;
     background-color: #ffefeb;
-    position: absolute;
-    right: 0;
-    left: 80px;
+    width: 100%;
     z-index: -1; }
 
 .page_section:nth-of-type(2) {
@@ -312,6 +315,22 @@ img, svg {
     color: #f25f3a;
     margin-top: 32px; }
 
+@media (min-width: 1114px) {
+  .community_section {
+    padding-bottom: 0; }
+    .community_section .community_section__heading {
+      font-size: 32px;
+      line-height: 43px;
+      width: 400px; }
+    .community_section .page_link--start {
+      transform: translateY(-90px);
+      -webkit-transform: translateY(-90px);
+      -moz-transform: translateY(-90px);
+      -ms-transform: translateY(-90px);
+      -o-transform: translateY(-90px); }
+    .community_section button {
+      margin-top: 16px; } }
+
 .footer {
   background-color: #1d1e25;
   padding: 32px;
@@ -331,12 +350,14 @@ img, svg {
     border: none; }
   .footer .email_input {
     padding-left: 32px;
-    flex-basis: 60%; }
+    width: 60%; }
   .footer .submit_btn {
     padding-left: 32px;
     padding-right: 32px;
     background-color: #f25f3a;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    width: 30%;
+    margin-left: 16px; }
   .footer a,
   .footer .submit_btn {
     color: #fafafa; }
@@ -344,7 +365,8 @@ img, svg {
     display: grid;
     grid-template-columns: auto auto;
     padding-top: 50px;
-    padding-left: 32px; }
+    padding-left: 32px;
+    column-gap: 48px; }
     .footer .menu_lists li {
       padding-bottom: 16px; }
   .footer .contact_container {
@@ -357,3 +379,29 @@ img, svg {
     padding-bottom: 40px; }
   .footer .logo_container {
     align-self: center; }
+
+@media (min-width: 1114px) {
+  .footer .footer_container {
+    max-width: 1114px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between; }
+  .footer .page_form {
+    width: unset; }
+  .footer .email_input {
+    padding-left: 32px;
+    height: 16px; }
+  .footer .submit_btn {
+    height: 48px; }
+  .footer .contact_container {
+    flex-direction: column; }
+  .footer .menu_lists {
+    margin-top: -6px;
+    padding-top: 0;
+    padding-left: 0;
+    column-gap: 200px; }
+  .footer .contact_lists {
+    padding-top: 96px;
+    padding-bottom: 0; } }

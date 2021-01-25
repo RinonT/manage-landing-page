@@ -21,7 +21,7 @@
 
     .email_input {
         padding-left: 32px;
-        flex-basis: 60%;
+        width: 60%;
     }
 
     .submit_btn {
@@ -29,6 +29,8 @@
         padding-right: 32px;
         background-color: hsl(12, 88%, 59%);
         text-transform: uppercase;
+        width: 30%;
+        margin-left: 16px;
     }
 
     a,
@@ -41,6 +43,7 @@
         grid-template-columns: auto auto;
         padding-top: 50px;
         padding-left: 32px;
+        column-gap: 48px;
 
         li {
             padding-bottom: 16px;
@@ -61,5 +64,47 @@
 
     .logo_container {
         align-self: center;
+    }
+}
+
+@media (min-width: 1114px) {
+    .footer {
+        .footer_container {
+            max-width: 1114px;
+            margin-left: auto;
+            margin-right: auto;
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: space-between;
+        }
+
+        .page_form {
+            width: unset;
+        }
+
+        .email_input {
+            padding-left: 32px;
+            height: 16px;
+        }
+
+        .submit_btn {
+            height: 48px;
+        }
+
+        .contact_container {
+            flex-direction: column;
+        }
+
+        .menu_lists { 
+            margin-top: -6px;
+            padding-top: 0;
+            padding-left: 0;
+            column-gap: 200px;
+        }
+
+        .contact_lists {
+            padding-top: 96px;
+            padding-bottom: 0;
+        }
     }
 }
