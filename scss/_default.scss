@@ -45,6 +45,11 @@ img, svg {
 @media(min-width: 1114px) {
 
     body {
+        background-image: url(../backgrounds/bg-tablet-pattern.svg);
+        background-repeat: no-repeat;
+        background-position-x: 115%;
+        background-position-y: -5%;
+        background-size: 50%;
         padding: 0;
     }
     

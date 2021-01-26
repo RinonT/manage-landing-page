@@ -1,5 +1,4 @@
-.header {
-    background-color: #ffffff;
+.header { 
     height: 75px;
 
     .page_heading {
@@ -147,12 +146,11 @@
         padding-bottom: 16px;
 
         .start_button {
-        display: block;
-        line-height: 0.1;
-        width: 200px;
-        height: 55px;
-        margin-top: 16px;
+            display: block;
+            line-height: 0.1;
+            width: 200px;
+            height: 55px;
+            margin-top: 16px;
+        }
     }
-}
- 
 }

@@ -35,6 +35,11 @@ img, svg {
 
 @media (min-width: 1114px) {
   body {
+    background-image: url(../backgrounds/bg-tablet-pattern.svg);
+    background-repeat: no-repeat;
+    background-position-x: 115%;
+    background-position-y: -5%;
+    background-size: 50%;
     padding: 0; }
   .header_container,
   .section_container,
@@ -44,7 +49,6 @@ img, svg {
     margin-right: auto; } }
 
 .header {
-  background-color: #ffffff;
   height: 75px; }
   .header .page_heading {
     margin: 0;
