@@ -16,7 +16,7 @@
     display: grid;
     grid-template-columns: auto auto;
     position: relative;
-    padding-top: 12px;
+    padding-top: 32px;
 
     & .show_menu,
     & .hide_menu {
@@ -30,7 +30,10 @@
     }
     & .hide_menu {
         display: none;
+        position: relative;
+        z-index: 1;
     }
+
     & .header_menu {
         display: flex;
         flex-direction: column;
@@ -92,6 +95,7 @@
 }
 
 .page_list a {
+    font-weight: bold;
     cursor: pointer;
     color: rgb(45, 49, 77);
 }
@@ -123,6 +127,7 @@
 
         .header_menu {
             display: block;
+            position: unset;
             width: 100%;
             margin: unset;
             transform: none;
@@ -132,6 +137,19 @@
             -o-transform: none;
             background: unset;
             grid-column: 2;
+
+            ul {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                padding-top: 6px;
+                margin-top: 21px;
+                background: unset;
+                width: unset;
+                padding: 0;
+                margin-right: 0;
+                margin-top: 0;
+            }
 
             a {
                 font-size: 19px;

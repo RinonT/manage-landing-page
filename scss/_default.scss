@@ -2,6 +2,11 @@ body {
     font-family: 'Public Sans', sans-serif;
     font-size: 18px;
     line-height: 29px;
+    background-image: url(../backgrounds/bg-tablet-pattern.svg);
+    background-repeat: no-repeat;
+    background-size: 115%;
+    background-position-y: -1%;
+    background-position-x: -100%;
     padding: 0;
     margin: 0; 
 }

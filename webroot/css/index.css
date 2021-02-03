@@ -2,6 +2,11 @@ body {
   font-family: 'Public Sans', sans-serif;
   font-size: 18px;
   line-height: 29px;
+  background-image: url(../backgrounds/bg-tablet-pattern.svg);
+  background-repeat: no-repeat;
+  background-size: 115%;
+  background-position-y: -1%;
+  background-position-x: -100%;
   padding: 0;
   margin: 0; }
 
@@ -61,7 +66,7 @@ img, svg {
   display: grid;
   grid-template-columns: auto auto;
   position: relative;
-  padding-top: 12px; }
+  padding-top: 32px; }
   .header_container .show_menu,
   .header_container .hide_menu {
     border: none;
@@ -72,7 +77,9 @@ img, svg {
     align-items: flex-end;
     margin-right: 8px; }
   .header_container .hide_menu {
-    display: none; }
+    display: none;
+    position: relative;
+    z-index: 1; }
   .header_container .header_menu {
     display: flex;
     flex-direction: column;
@@ -122,6 +129,7 @@ img, svg {
   padding-bottom: 32px; }
 
 .page_list a {
+  font-weight: bold;
   cursor: pointer;
   color: #2d314d; }
 
@@ -145,6 +153,7 @@ img, svg {
       display: none; }
     .header_container .header_menu {
       display: block;
+      position: unset;
       width: 100%;
       margin: unset;
       transform: none;
@@ -154,6 +163,17 @@ img, svg {
       -o-transform: none;
       background: unset;
       grid-column: 2; }
+      .header_container .header_menu ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding-top: 6px;
+        margin-top: 21px;
+        background: unset;
+        width: unset;
+        padding: 0;
+        margin-right: 0;
+        margin-top: 0; }
       .header_container .header_menu a {
         font-size: 19px; }
     .header_container .page_lists.header_lists.menu_lists {
@@ -181,6 +201,9 @@ img, svg {
   font-size: 38px;
   line-height: 42px;
   font-weight: 600; }
+
+.pricing_section .image_container {
+  margin-top: 32px; }
 
 .pricing_section .start_button {
   margin-top: 32px; }
