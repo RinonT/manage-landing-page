@@ -1,14 +1,22 @@
 body {
-    font-family: 'Public Sans', sans-serif;
+    font-family: "Public Sans", sans-serif;
     font-size: 18px;
     line-height: 29px;
     background-image: url(../backgrounds/bg-tablet-pattern.svg);
     background-repeat: no-repeat;
     background-size: 115%;
-    background-position-y: -1%;
-    background-position-x: -100%;
+    background-position-y: -2%;
+    background-position-x: -102%;
     padding: 0;
-    margin: 0; 
+    margin: 0;
+}
+
+@media (min-width: 700px) {
+    body {
+        background-size: 80%;
+        background-position-y: -3%;
+        background-position-x: 122%;
+    }
 }
 
 ul {
@@ -16,7 +24,6 @@ ul {
     margin: 0;
     list-style: none;
 }
-
 
 li,
 a {
@@ -27,7 +34,8 @@ a {
     margin: 0;
 }
 
-button, a {
+button,
+a {
     cursor: pointer;
 }
 .page_section {
@@ -39,16 +47,16 @@ button, a {
     padding-right: 16px;
 }
 
-.page_container.section_container{
+.page_container.section_container {
     text-align: center;
 }
 
-img, svg {
+img,
+svg {
     max-width: 100%;
 }
 
-@media(min-width: 1114px) {
-
+@media (min-width: 1114px) {
     body {
         background-image: url(../backgrounds/bg-tablet-pattern.svg);
         background-repeat: no-repeat;
@@ -57,7 +65,7 @@ img, svg {
         background-size: 50%;
         padding: 0;
     }
-    
+
     .header_container,
     .section_container,
     .footer_container {
