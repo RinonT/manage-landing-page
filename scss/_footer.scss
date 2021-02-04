@@ -38,6 +38,10 @@
         color: hsl(0, 0%, 98%);
     }
 
+    a:hover {
+        color: rgba(137, 43, 226, 0.87);
+    }
+
     .menu_lists {
         display: grid;
         grid-template-columns: auto auto;

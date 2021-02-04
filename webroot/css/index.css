@@ -69,6 +69,8 @@ svg {
     margin-left: 16px; }
   .header .start_button {
     display: none; }
+  .header a:hover {
+    color: rgba(137, 43, 226, 0.87); }
 
 .header_container {
   display: grid;
@@ -413,6 +415,8 @@ svg {
   .footer a,
   .footer .submit_btn {
     color: #fafafa; }
+  .footer a:hover {
+    color: rgba(137, 43, 226, 0.87); }
   .footer .menu_lists {
     display: grid;
     grid-template-columns: auto auto;
