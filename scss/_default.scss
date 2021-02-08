@@ -10,6 +10,24 @@ body {
     padding: 0;
     margin: 0;
 }
+main {
+    background-image: url(../backgrounds/bg-tablet-pattern.svg);
+    background-repeat: no-repeat;
+    background-size: 400px;
+    background-position-y: 54vh;
+    background-position-x: 62vw;
+
+    @media (min-width: 500px) {
+        background-size: 577px;
+        background-position-y: 58vh;
+        background-position-x: 66vw;
+    }
+
+    @media (min-width: 900px) {
+        background-position-y: 38vh;
+        background-position-x: 81vw;
+    }
+}
 
 @media (min-width: 700px) {
     body {
@@ -38,7 +56,7 @@ button,
 a {
     cursor: pointer;
 }
- 
+
 .page_section {
     padding-bottom: 100px;
 }
@@ -65,6 +83,12 @@ svg {
         background-position-y: -5%;
         background-size: 50%;
         padding: 0;
+    }
+
+    main {
+        background-size: 31%;
+        background-position-x: -27%;
+        background-position-y: 69%;
     }
 
     .header_container,

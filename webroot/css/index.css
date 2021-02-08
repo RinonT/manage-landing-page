@@ -10,6 +10,22 @@ body {
   padding: 0;
   margin: 0; }
 
+main {
+  background-image: url(../backgrounds/bg-tablet-pattern.svg);
+  background-repeat: no-repeat;
+  background-size: 400px;
+  background-position-y: 54vh;
+  background-position-x: 62vw; }
+  @media (min-width: 500px) {
+    main {
+      background-size: 577px;
+      background-position-y: 58vh;
+      background-position-x: 66vw; } }
+  @media (min-width: 900px) {
+    main {
+      background-position-y: 38vh;
+      background-position-x: 81vw; } }
+
 @media (min-width: 700px) {
   body {
     background-size: 80%;
@@ -54,6 +70,10 @@ svg {
     background-position-y: -5%;
     background-size: 50%;
     padding: 0; }
+  main {
+    background-size: 31%;
+    background-position-x: -27%;
+    background-position-y: 69%; }
   .header_container,
   .section_container,
   .footer_container {
@@ -281,6 +301,8 @@ svg {
     .testimonials_section .testimonials_section__article {
       display: flex;
       column-gap: 32px; }
+    .testimonials_section p {
+      font-size: 17px; }
     .testimonials_section .testimonials_section__article__container:last-of-type {
       display: none; }
     .testimonials_section .page_link--start {
@@ -303,7 +325,9 @@ svg {
     .about_section .article_header span {
       font-size: 24px;
       line-height: 25px;
-      display: block;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
       padding: 12px;
       padding-left: 32px;
       padding-right: 32px;
@@ -415,7 +439,8 @@ svg {
   .footer a,
   .footer .submit_btn {
     color: #fafafa; }
-  .footer a:hover {
+  .footer a:hover,
+  .footer button:hover {
     color: rgba(137, 43, 226, 0.87); }
   .footer .menu_lists {
     display: grid;
